@@ -24,7 +24,7 @@ export const Hero = () => {
               Commençons ensemble
             </Link>
             <Link
-              className="py-2.5 px-4 text-center rounded-lg duration-150 text-gray-700 border hover:bg-gray-50"
+              className={cn(buttonVariants({ variant: "outline" }))}
               href="/#cta"
             >
               En savoir plus
