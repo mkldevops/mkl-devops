@@ -6,6 +6,7 @@ import Header from "@/src/features/layout/Header";
 import Footer from "@/src/features/layout/Footer";
 import { ThemeProvider } from "@/src/theme/ThemeProvider";
 import { cn } from "@/lib/utils";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,11 +16,10 @@ export const metadata: Metadata = {
 };
 
 type LayoutProps = {
-  children: React.ReactNode;
-  modal?: React.ReactNode;
+  children: ReactNode;
 };
 
-export default function RootLayout({ children, modal }: LayoutProps) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="fr">
       <body className={cn(inter.className, "bg-background h-full")}>
@@ -32,7 +32,6 @@ export default function RootLayout({ children, modal }: LayoutProps) {
             <Footer />
           </div>
           <Toaster />
-          {modal}
         </ThemeProvider>
       </body>
     </html>

@@ -8,13 +8,14 @@ export default function Header() {
       <nav className="bg-white w-full md:static md:text-sm ">
         <div className="custom-screen items-center mx-auto md:flex">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="/">
+            <Link href="/" className="flex flex-col">
               <Image
-                src="/blinder.svg"
-                width="120"
-                height="50"
-                alt="Blinder logo"
-              />
+                src="/logo.jpg"
+                width={40}
+                height={20}
+                alt="MKL Devops logo"
+              />{" "}
+              MKL Devops
             </Link>
             <div className="md:hidden">
               <Button
