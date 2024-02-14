@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/src/theme/ThemeToggle";
 import Image from "next/image";
 import Link from "next/link";
@@ -60,7 +61,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  className="py-2.5 px-4 text-center rounded-lg duration-150 block font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 md:inline"
+                  className={cn(buttonVariants({ variant: "inverse" }))}
                   href="/get-started"
                 >
                   Let&apos;s work

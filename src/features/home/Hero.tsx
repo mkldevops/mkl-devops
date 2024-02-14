@@ -1,3 +1,5 @@
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export const Hero = () => {
@@ -10,12 +12,13 @@ export const Hero = () => {
             plus rapidement
           </h1>
           <p className="max-w-xl mx-auto">
-            MKL DevOps rend le processus simple et efficace pour construire et
-            développer vos applications SaaS, ou toute idée d&apos;entreprise.
+            <strong className="font-bold">MKL DevOps</strong> rend le processus
+            simple et efficace pour construire et développer vos applications
+            SaaS, ou toute idée d&apos;entreprise.
           </p>
           <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
             <Link
-              className="py-2.5 px-4 text-center rounded-lg duration-150 text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 "
+              className={cn(buttonVariants({ variant: "inverse" }))}
               href="/get-started"
             >
               Commençons ensemble
