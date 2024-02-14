@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/src/theme/ThemeToggle";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
   return (
     <header className="container">
-      <nav className="bg-white w-full md:static md:text-sm ">
+      <nav className="bg-forground w-full md:static md:text-sm ">
         <div className="custom-screen items-center mx-auto md:flex">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex flex-col">
@@ -64,6 +65,9 @@ export default function Header() {
                 >
                   Let&apos;s work
                 </Link>
+              </li>
+              <li>
+                <ThemeToggle />
               </li>
             </ul>
           </div>
