@@ -18,7 +18,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               className={cn(
-                buttonVariants({ variant: "default" }),
+                buttonVariants({ variant: "inverse" }),
                 "rounded-full p-2"
               )}
             >
@@ -30,7 +30,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               className={cn(
-                buttonVariants({ variant: "default" }),
+                buttonVariants({ variant: "inverse" }),
                 "rounded-full p-2"
               )}
             >
@@ -42,7 +42,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               className={cn(
-                buttonVariants({ variant: "default" }),
+                buttonVariants({ variant: "inverse" }),
                 "rounded-full p-2"
               )}
             >

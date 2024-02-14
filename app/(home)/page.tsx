@@ -1,3 +1,9 @@
+import { Hero } from "@/src/features/home/Hero";
+
 export default function page() {
-  return <div>page</div>;
+  return (
+    <main className="container">
+      <Hero />
+    </main>
+  );
 }

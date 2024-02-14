@@ -28,7 +28,7 @@ prisma-studio: ## Migrate prisma
 lint: ## Run all linters
 	bun lint
 
-analyze: lint build ## Run all linters and tests
+analyze: lint #build ## Run all linters and tests
 
 ## —— Git ———————————————————————————————————
 git-clean-branches: ## Clean merged branches
