@@ -1,12 +1,12 @@
+import { Toaster } from "@/components/ui/sonner";
+import { cn } from "@/lib/utils";
+import Footer from "@/src/features/layout/Footer";
+import Header from "@/src/features/layout/Header";
+import { ThemeProvider } from "@/src/theme/ThemeProvider";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import { Toaster } from "@/components/ui/sonner";
-import Header from "@/src/features/layout/Header";
-import Footer from "@/src/features/layout/Footer";
-import { ThemeProvider } from "@/src/theme/ThemeProvider";
-import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const APP_NAME = "MKL Devops App";
@@ -65,9 +65,9 @@ export default function RootLayout({ children }: LayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col h-full">
             <Header />
-            <div className="flex-1 max-w-lg m-auto py-14 w-full">
+            <main className="flex-1 max-w-lg m-auto py-14 w-full">
               {children}
-            </div>
+            </main>
             <Footer />
           </div>
           <Toaster />
