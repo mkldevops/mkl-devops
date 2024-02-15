@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -50,6 +51,14 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center">
+        <Image
+          src="/images/logo.png"
+          width={60}
+          height={20}
+          alt="MKL Devops logo"
+        />
       </div>
     </footer>
   );

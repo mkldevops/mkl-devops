@@ -12,12 +12,11 @@ export default function Header() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex flex-col">
               <Image
-                src="/logo.jpg"
-                width={40}
+                src="/images/logo-text.png"
+                width={80}
                 height={20}
                 alt="MKL Devops logo"
-              />{" "}
-              MKL Devops
+              />
             </Link>
             <div className="md:hidden">
               <Button
