@@ -1,10 +1,13 @@
-import { Button, buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { ThemeToggle } from "@/src/theme/ThemeToggle";
+"use client";
+
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { MenuHeader } from "./MenuHeader";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="container">
       <nav className="bg-forground w-full md:static md:text-sm ">
@@ -22,55 +25,42 @@ export default function Header() {
               <Button
                 role="button"
                 aria-label="Open the menu"
-                className="text-gray-500 hover:text-gray-800"
+                variant="link"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  ></path>
-                </svg>
+                {isMenuOpen ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    ></path>
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                )}
               </Button>
             </div>
           </div>
-          <div className="flex-1 pb-3 mt-8 md:pb-0 md:mt-0 md:block hidden">
-            <ul className="text-gray-700 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-gray-600 md:font-medium">
-              <li className="duration-150 hover:text-gray-900">
-                <Link className="block" href="/#features">
-                  Features
-                </Link>
-              </li>
-              <li className="duration-150 hover:text-gray-900">
-                <Link className="block" href="/#toolkit">
-                  Our toolkit
-                </Link>
-              </li>
-              <li className="duration-150 hover:text-gray-900">
-                <Link className="block" href="/#testimonials">
-                  Testimonials
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={cn(buttonVariants({ variant: "inverse" }))}
-                  href="/get-started"
-                >
-                  Let&apos;s work
-                </Link>
-              </li>
-              <li>
-                <ThemeToggle />
-              </li>
-            </ul>
-          </div>
+          <MenuHeader isMenuOpen={isMenuOpen} />
         </div>
       </nav>
     </header>
