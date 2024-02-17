@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="container">
-      <div className="custom-screen pt-10">
+    <footer className="container py-10">
+      <div className="custom-screen">
         <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
           <p className="text-gray-600">
             © 2024 MKL Devops. All rights reserved.
