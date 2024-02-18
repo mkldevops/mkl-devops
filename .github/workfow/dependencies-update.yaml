@@ -15,9 +15,8 @@ jobs:
       - uses: neverendingqs/gh-action-node-update-deps@v2
         with:
           bump-version: patch # defaults to not bumping the package version
-          commit-message-prefix: chore # defaults 'chore'
           package-manager: bun # defaults to 'npm'
-          github-token: ${{ secrets.CUSTOM_GITHUB_TOKEN }} # defaults to the repo's `GITHUB_TOKEN`
+          github-token: ${{ secrets.GITHUB_TOKEN }} # defaults to the repo's `GITHUB_TOKEN`
           git-user-email: mkl.devops@gmail.com # defaults to '41898282+github-actions[bot]@users.noreply.github.com'
           git-user-name: MKL Devops [bot] # defaults to 'github-actions[bot]'
           pre-commit-script: bun run build # defaults to not running anything
