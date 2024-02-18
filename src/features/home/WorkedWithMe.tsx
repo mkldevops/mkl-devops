@@ -30,6 +30,10 @@ export const WorkedWithMe = () => {
       title: "ri7",
       src: "/images/ri7.jpeg",
     },
+    {
+      title: "see-tickets",
+      src: "/images/see-tickets.webp",
+    },
   ]);
 
   return (
