@@ -8,9 +8,14 @@ import { MenuHeader } from "./MenuHeader";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <header className="container">
-      <nav className="bg-forground w-full md:static md:text-sm ">
+    <header className="container bg-primary-foreground fixed z-30">
+      <nav className="bg-forground w-full md:static md:text-sm">
         <div className="custom-screen items-center mx-auto md:flex">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex flex-col">
@@ -28,7 +33,7 @@ export default function Header() {
                 variant="link"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                {isMenuOpen ? (
+                {!isMenuOpen ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -60,7 +65,7 @@ export default function Header() {
               </Button>
             </div>
           </div>
-          <MenuHeader isMenuOpen={isMenuOpen} />
+          <MenuHeader isMenuOpen={isMenuOpen} closeMenu={closeMenu} />
         </div>
       </nav>
     </header>

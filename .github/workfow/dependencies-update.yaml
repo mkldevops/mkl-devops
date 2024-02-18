@@ -1,7 +1,8 @@
 name: Scheduled dependencies update
 on:
   schedule:
-    - cron: "0 17 * * *"
+    - cron: "0 0 * * *"
+
 jobs:
   update-deps:
     name: Update Node dependencies

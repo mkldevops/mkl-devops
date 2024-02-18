@@ -66,9 +66,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex flex-col h-full">
             <Header />
-            <main className="flex-1 max-w-lg m-auto py-14 w-full">
-              {children}
-            </main>
+            <main className="py-32 w-full">{children}</main>
             <Footer />
           </div>
           <Toaster />
