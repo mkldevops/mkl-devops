@@ -16,7 +16,7 @@ jobs:
         with:
           bump-version: patch # defaults to not bumping the package version
           package-manager: bun # defaults to 'npm'
-          github-token: ${{ secrets.GITHUB_TOKEN }} # defaults to the repo's `GITHUB_TOKEN`
+          github-token: ${{ secrets.MKLDEVOPS_GITHUB_TOKEN }} # defaults to the repo's `GITHUB_TOKEN`
           git-user-email: mkl.devops@gmail.com # defaults to '41898282+github-actions[bot]@users.noreply.github.com'
           git-user-name: MKL Devops [bot] # defaults to 'github-actions[bot]'
           pre-commit-script: bun run build # defaults to not running anything
