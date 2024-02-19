@@ -1,0 +1,14 @@
+.gradient-border {
+  border: 1px solid transparent;
+  background: linear-gradient(#fff, #fff),
+    linear-gradient(
+      25deg,
+      #d1d5db,
+      #d1d5db,
+      rgba(0, 0, 0, 0.63),
+      #d1d5db,
+      #d1d5db
+    );
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
