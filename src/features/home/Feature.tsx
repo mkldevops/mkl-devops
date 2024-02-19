@@ -1,7 +1,7 @@
 export const Feature = () => {
   return (
-    <section className="py-16 flex-1 max-w-lg m-auto">
-      <div id="features" className="custom-screen text-gray-600">
+    <section className="py-16 flex-1 m-auto">
+      <div id="features" className="text-gray-600">
         <ul className="grid gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           <li className="space-y-3">
             <div className="w-12 h-12 border text-indigo-600 rounded-full flex items-center justify-center">

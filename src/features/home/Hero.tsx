@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <section className="mb-5">
-      <div className="custom-screen text-gray-600">
+      <div className="container text-gray-600">
         <div className="space-y-5 max-w-4xl mx-auto text-center">
           <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
             Construisez et développez vos futurs projets avec nous.
