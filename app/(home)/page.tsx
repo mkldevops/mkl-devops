@@ -1,5 +1,6 @@
 import { Feature } from "@/src/features/home/Feature";
 import { Hero } from "@/src/features/home/Hero";
+import { Toolkit } from "@/src/features/home/Toolkit";
 import { WorkedWithMe } from "@/src/features/home/WorkedWithMe";
 
 export default function page() {
@@ -17,6 +18,7 @@ export default function page() {
         ></div>
         <div className="container">
           <Feature />
+          <Toolkit />
         </div>
       </div>
     </>
