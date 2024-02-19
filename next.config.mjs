@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ["media.licdn.com"],
+  },
+};
 
 import withPWAInit from "@ducanh2912/next-pwa";
 
