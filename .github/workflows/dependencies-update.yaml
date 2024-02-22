@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
+          node-version: 20
       - uses: neverendingqs/gh-action-node-update-deps@v2
         with:
           bump-version: patch # defaults to not bumping the package version
