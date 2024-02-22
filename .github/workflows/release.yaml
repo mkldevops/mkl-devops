@@ -14,7 +14,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v5
         with:
           github-token: ${{ secrets.MKLDEVOPS_GITHUB_TOKEN }}
-          output-file: "false"
+          skip-commit: "true"
 
       - name: Create Release
         uses: actions/create-release@v1
