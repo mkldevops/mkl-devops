@@ -6,7 +6,7 @@ export const Testimonials = () => {
   return (
     <div className="relative">
       <section className="py-16 pb-0">
-        <div id="testimonials" className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div id="testimonials" className="max-w-screen-4xl mx-auto">
           <div className="max-w-2xl sm:text-center md:mx-auto">
             <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
               Découvrez l&apos;écho de notre réputation
@@ -45,7 +45,7 @@ export const Testimonials = () => {
                       </div>
                     </div>
                     <blockquote>
-                      <p className="mt-6 text-gray-700">
+                      <p className="mt-6 text-gray-700 whitespace-pre-wrap">
                         {testimonial.content}
                       </p>
                     </blockquote>

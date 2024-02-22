@@ -43,6 +43,15 @@ const testimonials: Testimonial[] = [
       "Ce fut un plaisir de travailler avec toi Fahari. Notre travail sur l’optimisation des appels BDD fut un succès grâce à ton implication.",
     linedinLink: "https://www.linkedin.com/in/amine-ben-youssef-72187810",
   },
+  {
+    name: "Seifallah Beldi",
+    job: "Full Stack Developer PHP - Symfony",
+    picture:
+      "https://media.licdn.com/dms/image/C4E03AQFXDGUF-y96Zg/profile-displayphoto-shrink_100_100/0/1629501231102?e=1714003200&v=beta&t=8pAKzmbVT4t3SehCKZ4gOrsYHN64IvO2tvvXJYUDM_0",
+    content:
+      "J'ai travaillé pendant 1an et plus avec Fahari sur un projet complexe au sein de Tekyn. \nFahari est indéniablement l'un des meilleurs développeurs Symfony que j'ai rencontrés au cours de ma carrière.\nSa maîtrise de Symfony est exceptionnelle. Il excelle dans la conception et la mise en œuvre de solutions techniques complexes, résolvant efficacement les défis du développement web. Fahari a une compréhension approfondie de l'architecture Symfony, et il est capable de créer des applications web robustes et extensibles.\nEn plus de ses compétences techniques, Fahari est un collègue précieux. Il est toujours disposé à partager ses connaissances et à aider les membres de l'équipe. Sa capacité à travailler en équipe, sa communication claire et son engagement en font un atout précieux pour tout projet.\nJe recommande Fahari sans réserve en tant que développeur Symfony senior. Si vous cherchez quelqu'un pour mener à bien des projets Symfony de haut niveau, vous ne trouverez pas de meilleur candidat.",
+    linedinLink: "https://www.linkedin.com/in/seifallah-beldi",
+  },
 ];
 
 export const getTestimonials = () => {
