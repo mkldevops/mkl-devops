@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/src/theme/ThemeToggle";
 import Link from "next/link";
@@ -53,7 +53,7 @@ export const MenuHeader = ({ isMenuOpen, closeMenu }: MenuHeaderProps) => {
             href="/#testimonials"
             onClick={(event) => goTo(event)}
           >
-            Testimonials
+            Témoignages
           </Link>
         </li>
         <li>
@@ -62,7 +62,7 @@ export const MenuHeader = ({ isMenuOpen, closeMenu }: MenuHeaderProps) => {
             href="/get-started"
             onClick={(event) => goTo(event)}
           >
-            Let&apos;s work
+            Construisons !
           </Link>
         </li>
         <li>
