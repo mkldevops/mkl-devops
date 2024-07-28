@@ -21,7 +21,6 @@ export const WorkedWithMe = () => {
                   height={100}
                   decoding="async"
                   loading="lazy"
-                  className="grayscale"
                 />
               </li>
             ))}

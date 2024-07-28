@@ -9,8 +9,12 @@ const companies: Company[] = [
     src: "/images/om.png",
   },
   {
+    title: "enedis.com",
+    src: "/images/enedis.png",
+  },
+  {
     title: "travaux.com",
-    src: "/images/travaux.webp",
+    src: "/images/travaux.png",
   },
   {
     title: "tekyn sas",
@@ -18,7 +22,7 @@ const companies: Company[] = [
   },
   {
     title: "digital virgo",
-    src: "/images/digital-virgo.webp",
+    src: "/images/digital-virgo.png",
   },
   {
     title: "docomo digital",
@@ -26,11 +30,19 @@ const companies: Company[] = [
   },
   {
     title: "ri7",
-    src: "/images/ri7.jpeg",
+    src: "/images/ri7.png",
   },
   {
     title: "see-tickets",
-    src: "/images/see-tickets.webp",
+    src: "/images/see-tickets.png",
+  },
+  {
+    title: "formasup",
+    src: "/images/formasup.png",
+  },
+  {
+    title: "Planet-Cards",
+    src: "/images/planet-cards.png",
   },
 ];
 
