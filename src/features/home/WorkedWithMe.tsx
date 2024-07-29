@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { getCompanies } from "@/src/query/get-companies";
 import Image from "next/image";
 

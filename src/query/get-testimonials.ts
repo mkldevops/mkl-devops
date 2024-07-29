@@ -1,4 +1,5 @@
 type Testimonial = {
+  id: number;
   name: string;
   job: string;
   picture: string;
@@ -8,6 +9,7 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
+    id: 1,
     name: "Amine BEL HADJ ALI",
     job: "Full Stack Developer",
     picture: "/images/amine-bel-hadj-ali.jpeg",
@@ -16,6 +18,7 @@ const testimonials: Testimonial[] = [
     linedinLink: "https://www.linkedin.com/in/amine-belhadjali-dev/",
   },
   {
+    id: 2,
     name: "Remi FUSSIEN",
     job: "Tech enthusiast",
     picture: "/images/remi-fussien.jpeg",
@@ -24,6 +27,7 @@ const testimonials: Testimonial[] = [
     linedinLink: "https://www.linkedin.com/in/remi-fussien/",
   },
   {
+    id: 3,
     name: "Cyril ZILBERMAN",
     job: "Fullstack freelance developer",
     picture: "/images/cyril-zilberman.jpeg",
@@ -32,6 +36,7 @@ const testimonials: Testimonial[] = [
     linedinLink: "https://www.linkedin.com/in/cyril-z-035b1124/",
   },
   {
+    id: 4,
     name: "Amine Ben Youssef",
     job: "Database expert - IT Manager",
     picture:
@@ -41,6 +46,7 @@ const testimonials: Testimonial[] = [
     linedinLink: "https://www.linkedin.com/in/amine-ben-youssef-72187810",
   },
   {
+    id: 5,
     name: "Seifallah Beldi",
     job: "Full Stack Developer PHP - Symfony",
     picture: "/images/seifallah-beldi.jpeg",
@@ -49,11 +55,21 @@ const testimonials: Testimonial[] = [
     linedinLink: "https://www.linkedin.com/in/seifallah-beldi",
   },
   {
+    id: 6,
     name: "Timothée Olivar",
     job: "Je développe l'API dont vous avez besoin | 💻 Développeur Senior PHP-Symfony | 🌐 API REST - GraphQL | 🔟ans d'xp",
     picture: "/images/timothee-olivar.jpeg",
     content:
       "Fahari est un très bon développeur senior expérimenté qui sait apporter son expertise, notamment en PHP/Symfony mais également dans beaucoup de domaine ou il excelle.\nToujours à la pointe des dernières technologies et versions des langages il sait transmettre sa passion et ses connaissances pour améliorer, former et accompagner toute une équipe dans la réussite d'un projet.\nJ'ai beaucoup appris à ses côtés, tant au niveau technique que humain, et je retravaillerai avec lui avec grand plaisir !mSi vous cherchez quelqu'un de fiable et compétent pour vous aider à réussir votre projet et vous accompagner, alors ne cherchez plus ;)",
+    linedinLink: "https://www.linkedin.com/in/timothee-olivar",
+  },
+  {
+    id: 7,
+    name: "William Sauvage",
+    job: "Fondateur / Responsable Pédagogique chez École Ri7",
+    picture: "/images/william-sauvage.jpeg",
+    content:
+      "Je recommande vivement Fahari autant techniquement qu’humainement. Que ce soit en tant que développeur, DevOps ou formateur. Je te remercie Fahari pour ton sérieux et ta bienveillance auprès de mes étudiants.",
     linedinLink: "https://www.linkedin.com/in/timothee-olivar",
   },
 ];

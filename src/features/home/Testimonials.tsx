@@ -1,3 +1,4 @@
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { getTestimonials } from "@/src/query/get-testimonials";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +16,18 @@ export const Testimonials = () => {
               Plongez dans les éloges des experts internationaux à notre égard.
             </p>
           </div>
+
+          <div className="flex flex-row items-center justify-center my-10 w-full">
+            <AnimatedTooltip
+              items={getTestimonials().map((item) => ({
+                id: item.id,
+                image: item.picture,
+                designation: item.job,
+                name: item.name,
+              }))}
+            />
+          </div>
+
           <div className="mt-12">
             <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {getTestimonials().map((testimonial) => (
