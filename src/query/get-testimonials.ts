@@ -39,8 +39,7 @@ const testimonials: Testimonial[] = [
     id: 4,
     name: "Amine Ben Youssef",
     job: "Database expert - IT Manager",
-    picture:
-      "https://media.licdn.com/dms/image/D4D03AQFiJdw9Y2Yh5A/profile-displayphoto-shrink_100_100/0/1665832586241?e=1714003200&v=beta&t=SK0ZEefz8nT0OVQBOndIN6BYUNRKGsTHUYy-Vcr_vG8",
+    picture: "/images/amine-ben-youssef.jpeg",
     content:
       "Ce fut un plaisir de travailler avec toi Fahari. Notre travail sur l’optimisation des appels BDD fut un succès grâce à ton implication.",
     linedinLink: "https://www.linkedin.com/in/amine-ben-youssef-72187810",
@@ -57,7 +56,7 @@ const testimonials: Testimonial[] = [
   {
     id: 6,
     name: "Timothée Olivar",
-    job: "Je développe l'API dont vous avez besoin | 💻 Développeur Senior PHP-Symfony | 🌐 API REST - GraphQL | 🔟ans d'xp",
+    job: "Développeur Senior PHP-Symfony",
     picture: "/images/timothee-olivar.jpeg",
     content:
       "Fahari est un très bon développeur senior expérimenté qui sait apporter son expertise, notamment en PHP/Symfony mais également dans beaucoup de domaine ou il excelle.\nToujours à la pointe des dernières technologies et versions des langages il sait transmettre sa passion et ses connaissances pour améliorer, former et accompagner toute une équipe dans la réussite d'un projet.\nJ'ai beaucoup appris à ses côtés, tant au niveau technique que humain, et je retravaillerai avec lui avec grand plaisir !mSi vous cherchez quelqu'un de fiable et compétent pour vous aider à réussir votre projet et vous accompagner, alors ne cherchez plus ;)",
@@ -66,7 +65,7 @@ const testimonials: Testimonial[] = [
   {
     id: 7,
     name: "William Sauvage",
-    job: "Fondateur / Responsable Pédagogique chez École Ri7",
+    job: "Fondateur École Ri7",
     picture: "/images/william-sauvage.jpeg",
     content:
       "Je recommande vivement Fahari autant techniquement qu’humainement. Que ce soit en tant que développeur, DevOps ou formateur. Je te remercie Fahari pour ton sérieux et ta bienveillance auprès de mes étudiants.",

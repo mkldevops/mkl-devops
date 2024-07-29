@@ -1,4 +1,5 @@
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { getTestimonials } from "@/src/query/get-testimonials";
 import Image from "next/image";
 import Link from "next/link";
@@ -58,9 +59,11 @@ export const Testimonials = () => {
                       </div>
                     </div>
                     <blockquote>
-                      <p className="mt-6 text-gray-700 whitespace-pre-wrap">
-                        {testimonial.content}
-                      </p>
+                      <ScrollArea className="h-64 w-full mt-6">
+                        <p className="text-gray-700 whitespace-pre-wrap">
+                          {testimonial.content}
+                        </p>
+                      </ScrollArea>
                     </blockquote>
                   </figure>
                 </li>
