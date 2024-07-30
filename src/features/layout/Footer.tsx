@@ -53,12 +53,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <Image
-          src="/images/logo.png"
-          width={60}
-          height={20}
-          alt="MKL Devops logo"
-        />
+        <Image src="/images/logo.png" width={60} height={20} alt="Fahari.pro" />
       </div>
     </footer>
   );

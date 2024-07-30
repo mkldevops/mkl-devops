@@ -20,10 +20,10 @@ export default function Header() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/" className="flex flex-col">
               <Image
-                src="/images/logo-text.png"
+                src="/images/logo.png"
                 width={80}
                 height={20}
-                alt="MKL Devops logo"
+                alt="Fahari.pro logo"
               />
             </Link>
             <div className="md:hidden">

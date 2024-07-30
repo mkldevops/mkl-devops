@@ -11,7 +11,7 @@ export const Hero = () => {
             Construisez et développez vos futurs projets avec nous.
           </h1>
           <p className="max-w-xl mx-auto">
-            Avec <strong className="font-bold">MKL DevOps</strong>, le processus
+            Avec <strong className="font-bold">Fahari.pro</strong>, le processus
             devient plus simple et efficace dans la construction et le
             développement de vos applications SaaS, ou toute idée
             d&apos;entreprise.
