@@ -19,9 +19,9 @@ export const Hero = () => {
           <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
             <Link
               className={cn(buttonVariants({ variant: "inverse" }))}
-              href="/get-started"
+              href="https://calendly.com/fahari-pro/un-projet-et-si-on-en-parlait"
             >
-              Construisons
+              Contactez-nous
             </Link>
             <Link
               className={cn(buttonVariants({ variant: "outline" }))}

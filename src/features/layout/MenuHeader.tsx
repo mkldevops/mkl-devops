@@ -59,7 +59,7 @@ export const MenuHeader = ({ isMenuOpen, closeMenu }: MenuHeaderProps) => {
         <li>
           <Link
             className={cn(buttonVariants({ variant: "inverse" }))}
-            href="/get-started"
+            href="https://calendly.com/fahari-pro/un-projet-et-si-on-en-parlait"
             onClick={(event) => goTo(event)}
           >
             Construisons !

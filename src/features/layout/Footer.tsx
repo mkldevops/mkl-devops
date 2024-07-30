@@ -1,6 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="custom-screen">
         <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
           <p className="text-gray-600">
-            © 2024 MKL Devops. All rights reserved.
+            © 2024 Fahari.pro. All rights reserved.
           </p>
           <div className="flex items-center gap-x-6 text-gray-400 mt-6">
             <Link
@@ -47,13 +47,18 @@ export default function Footer() {
                 "rounded-full p-2"
               )}
             >
-              <Twitter size={24} />
+              <XIcon size={24} />
             </Link>
           </div>
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <Image src="/images/logo.png" width={60} height={20} alt="Fahari.pro" />
+        <Image
+          src="/images/logo.png"
+          width={200}
+          height={20}
+          alt="Fahari.pro"
+        />
       </div>
     </footer>
   );

@@ -9,11 +9,11 @@ import { ReactNode } from "react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-const APP_NAME = "MKL Devops App";
-const APP_DEFAULT_TITLE = "MKL Devops App";
-const APP_TITLE_TEMPLATE = "%s - MKL Devops App";
+const APP_NAME = "Fahari.pro";
+const APP_DEFAULT_TITLE = "Fahari.pro";
+const APP_TITLE_TEMPLATE = "%s - Fahari.pro";
 const APP_DESCRIPTION =
-  "MKL Devops App - Vous avez un projet ? Construisons-le ensemble !";
+  "Fahari.pro - Vous avez un projet ? Construisons-le ensemble !";
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,

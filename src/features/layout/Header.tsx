@@ -21,8 +21,8 @@ export default function Header() {
             <Link href="/" className="flex flex-col">
               <Image
                 src="/images/logo.png"
-                width={80}
-                height={20}
+                width={140}
+                height={30}
                 alt="Fahari.pro logo"
               />
             </Link>
